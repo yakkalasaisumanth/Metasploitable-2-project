@@ -1,0 +1,35 @@
+root
+user
+admin
+msfadmin
+hacker
+123456789
+download
+P@$$word
+ backup
+ bin
+ daemon
+ distccd
+ ftp
+ games
+ gnats
+ irc
+ libuuid
+ list
+ lp
+ mail
+ man
+ mysql
+ news
+ nobody
+ postfix
+ postgres
+ postmaster
+ proxy
+ service
+ sshd
+ sync
+ sys
+ syslog 
+ uucp
+ www-data
