@@ -22,11 +22,10 @@
 2. [x] kali linux (or) Parrot Os (or) Any Other operating system virtual machine of your liking.
 
 
-3. [x] Metasploitable 2
-  metasploitable :- [metasploitable](http://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/download)
+3. [x] Metasploitable 2 :- [metasploitable](http://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/download)
 
 
-## Lab Set Up.(virtual box)
+## Lab Set Up(virtual box)
 
 1. setting up a kali linux virtual machine:-
 
@@ -135,11 +134,34 @@
    - Click "OK" to save the settings.
    - With the VM selected, click "Start" to launch the VM.
 
+   16. related images
+
+   - ![meta img](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/extratct%20zip.png)
+
+   - ![meta vm](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/metasploitable%20vm.png)
+
+   - ![meta hdd](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/metasploitable%20hdd.png)
+
+   - ![meta hdd1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/hdd.png)
+
+
 ### Scanning The MetaSploitable 2 Machine.
+
+- you can download the scanning report and other relavent documents [here.](https://github.com/yakkalasaisumanth/Metasploitable-2-project/tree/main/related%20documents)
+
+- nmap scanning report :- [report](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/related%20documents/nmap_scan_report.txt)
+
+- required(or)found usernames :- [usernames](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/related%20documents/user_name.txt)
+
+- required passwords :- [passwords](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/related%20documents/passwords.txt)
+
 
 1. make sure that the metasploitable has no internet access.
 
 2. make sure the "network settings" of the "kali linux" and "metasploitable 2" are set to "host only adapter"
+
+- ![meta network](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/network%20settings.png)
+
 
 3. the reason we do is that the two machines communicate with each other.
 
@@ -158,6 +180,9 @@ sudo nmap -sV -sS -O 192.168.56.103(metasplotable 2 ip address) -o nmap_scan_res
 ```
 ifconfig
 ```
+
+ - ![meta ip](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/metasploitable%20ip.png)
+
 
 9. if you are opening the metasploitable 2 for the first time it asks to login .
 
@@ -226,6 +251,14 @@ set RHOST metasploitable 2 IP
 
 20. now you can run any command for example whoami.
 
+21. supported images.
+
+- ![meta vsftpd](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/vsftpd.png)
+
+- ![meta vsftpd1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/vsftpd.%201.png)
+
+- ![meta vsftpd2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/vsftpd%202.png)
+
 #### samba service port 139 & 445.
 
 1. as the nmap scan results the port 139 & 445 is open and it is ftp and we can see the version as "samba 3.x"
@@ -284,10 +317,83 @@ set LHOST kali linux Ip
 
 20. now you can run any command for example whoami.
 
+21. supported images.
+
+- ![meta smb](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/smaba%20version%20vulenarability.png)
+
+- ![meta smb1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/samba%20exploit.png)
+
+- ![meta smb2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/samba%20exploit%20.png)
+
 ***maxium of the ports can be exploited by the above procewdure but some require special attendace i cannot write all the ports exploited report but i can say to practice your self***
 
-#### Screenshots of the exploits done by me.
+#### Screenshots of the exploits done by me.You Can Just Follow These Screen Shots If You Are Stuck.
 
+1. port no 1099 java RMI.
+- ![meta java](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/1099%20java%20rmi.png)
+
+- ![meta java1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/1099%20java%20rmi.png)
+
+- ![meta java2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/port%201099%20java%20rmi.png)
+
+- ![meta java3](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/port%201099%20java%20rmi.png)
+
+2. port no 5432 postgresql
+- ![meta sql](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/5432%20postgresql.png)
+
+- ![meta post](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/postgresql.png)
+
+3. port 6000 X11
+- ![meta x11](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/6000%20x11.png)
+
+4. port no 6667 IRC
+- ![meta irc](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/6667%20irc.png)
+
+- ![meta irc1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/6667%20irc%201.png)
+
+- ![meta irc2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/6667%20irc%203.png)
+
+5. port no 8180 tomcat
+- ![meta tomcat](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/8180%20tomcat.png)
+
+- ![meta tomcat1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/8180%20tomcat.png)
+
+6. port 80 http this one is bit trick because you need to use an another tool for this exploit.
+
+  - the tool is gobuster please use the gobuster tool to find the sub domains of the website.
+
+- ![meta http](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/http.png)
+
+
+- ![meta http1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/http%20robots.txtx.png)
+
+7. port no 2121 ftp
+
+- ![meat ftp21](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/msf%20ftp.png)
+
+8. port no 53 telnet.
+- ![meta telnet](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/msf%20telnet.png)
+
+- ![meta telnet1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/telnet.png)
+
+- ![meta telnet2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/telnet%20login.png)
+
+9. PHP
+
+- ![meta php](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/php%20info.png)
+
+- ![meta php1](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/php%20vulunarability%20.png)
+
+- ![meta php2](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/php%20vulunarability.png)
+
+10. port no 1524 bind shell.
+- ![meta bind](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/port%201524%20tcp.png)
+
+11. port no 25 smtp.
+- ![meta smtp](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/smtp%20.png)
+
+12. port no 5900 VNC
+- ![meta vnc](https://github.com/yakkalasaisumanth/Metasploitable-2-project/blob/main/images/vnc%20server%205900.png)
 
 
 #### every one has their own technique of exploiting. for me this the best way feel free to do as you like it and happy hacking.
